@@ -1,0 +1,140 @@
+html {
+    background-color: #c0e4e4;
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background-color: white;
+    border-radius: 15px;
+    color: #3a3a3a;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7em;
+    margin: auto;
+    max-width: 500px;
+    padding: 1em 4em 2em 4em;
+}
+
+p {
+    text-align: justify;
+}
+
+#enunciado {
+    color: teal;
+    font-style: italic;
+    font-weight: 500;
+}
+
+h2 {
+    text-align: center;
+    color: teal;
+    font-size: 1.6em;
+    line-height: 1.6em;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+    margin: 0px;
+}
+
+#resultado-primitiva h2 {
+    color: #009900;
+}
+
+#resultado-euromillon h2 {
+    color: #0066cc;
+}
+
+h1 {
+    text-align: center;
+    color: teal;
+    margin-bottom: 1.5em;
+}
+
+h3 {
+    color: teal;
+}
+
+button,
+input[type=submit] {
+    background-color: #ffffff;
+    border-radius: 40px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 1.3em;
+    margin: 20px auto;
+    padding: 10px 20px;
+    width: 180px;
+}
+
+#primitiva {
+    color: #009900;
+}
+
+#euromillon {
+    color: #0066cc;
+}
+
+button:hover,
+input[type=submit]:hover {
+    background-color: lemonchiffon;
+    border: 2px solid lemonchiffon;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+a {
+    color: #008080;
+    text-decoration-color: #008080;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    text-align: center;
+}
+
+#resultado-primitiva,
+#resultado-euromillon {
+    margin: 2em auto;
+}
+
+#contenedor-animacion {
+    width: 150px;
+    height: 80px;
+    margin-bottom: 1em;
+}
+
+#bigote {
+    width: 150px;
+    position: relative;
+    animation: animacion 4s infinite;
+}
+
+@keyframes animacion {
+    45% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+    52% {
+        transform: rotate(-1deg);
+    }
+    55% {
+        transform: rotate(5deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+}
